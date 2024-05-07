@@ -18,9 +18,5 @@ export class DetailEtudiantComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe(params => {
-      const id = +params['id']; // Conversion de l'ID de string à number
-      this.etudiant = this.etudiantsService.getEtudiantById(id);
-    });
   }
 }

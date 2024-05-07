@@ -6,8 +6,8 @@ import { Personne } from '../models/personne';
 })
 export class EtudiantsService {
   private etudiants: Personne[] = [
-    new Personne(1, 'Doe', 'John', new Date('2022-01-15'), true, 'assets/images/john.jpg'),
-    new Personne(2, 'Smith', 'Jane', new Date('2022-05-20'), false, 'assets/images/jane.jpg'),
+    new Personne( 'Doe', 'John', new Date('2022-01-15'), true,),
+    new Personne( 'Smith', 'Jane', new Date('2022-05-20'), false,),
     // Ajoutez d'autres étudiants selon le besoin
   ];
 
@@ -18,13 +18,7 @@ export class EtudiantsService {
     return this.etudiants;
   }
 
-  // Récupérer un étudiant par ID
-  getEtudiantById(id: number): Personne | undefined {
-    return this.etudiants.find(etudiant => etudiant.id === id);
+
   }
 
-  // Ajouter un nouvel étudiant
-  addEtudiant(etudiant: Personne): void {
-    this.etudiants.push(etudiant);
-  }
-}
+  

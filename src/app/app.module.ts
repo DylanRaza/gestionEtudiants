@@ -6,22 +6,23 @@ import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms'; // Pour les formulaires réactifs
 import { AppRoutingModule } from './app-routing.module'; // Pour le routage
 
-// Importez vos composants ici
+
 import { ListeEtudiantsComponent } from './liste-etudiants/liste-etudiants.component';
 import { AjouterEtudiantComponent } from './ajouter-etudiant/ajouter-etudiant.component';
+import {MatToolbarModule} from '@angular/material/toolbar'; 
+import { MatIcon } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ListeEtudiantsComponent,
-    AjouterEtudiantComponent
-    // Autres composants
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    AppRoutingModule
-    // Autres modules
+    AppRoutingModule,
+    MatToolbarModule,
+    MatIcon
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

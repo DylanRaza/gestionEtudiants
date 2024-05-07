@@ -1,1 +1,92 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+    --font-size00: 12px;
+    --font-size01: 14px;
+    --font-size02: 16px;
+    --font-size03: 18px;
+    --font-size04: 20px;
+    --font-size05: 26px;
+    --font-size06: 32px;
+    --font-size07: 48px;
+
+    --font-weight00: 500;
+    --font-weight01: 600;
+    --font-weight02: bold;
+    --font-family00: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    --color-background: #fff;
+    --color-black: black;
+    --color-white: white;
+    --color-warning: #FF475D;
+    --color-incomplete: #FFC700;
+
+    --color-alpha00: rgba(0, 0, 0, 0.1);
+    --color-text00: #000;
+
+    --color-gray00: #555555;
+    --color-gray02: #D9D9D9;
+    --color-gray03: #989BA3;
+    --color-gray04: #EDEDED;
+    --color-gray05: #f5f5f5;
+
+    --radius-small: 12px;
+    --radius-medium: 16px;
+    --radius-big: 24px;
+
+    --border00: 1px solid var(--color-alpha00);
+    --border01: 1px solid var(--color-black);
+    --border02: 2px solid var(--color-black);
+
+    --border00-warning: 1px solid var(--color-warning);
+
+    --gap00: 10px;
+    --gap01: 20px;
+    --gap02: 40px;
+    --gap03: 5px;
+    --gap04: 50px;
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+/* Style for the navigation bar */
+nav {
+    background-color: #f8f9fa; /* Light gray background */
+    text-align: center;
+    padding: 12px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  }
+
+  /* Style for the navigation list */
+  nav ul {
+    list-style-type: none;
+  }
+
+  /* Style for each navigation link */
+  nav li {
+    display: inline; /* Inline display for horizontal layout */
+    margin: 0 15px; /* Spacing between links */
+  }
+
+  /* Style for the anchor tags */
+  nav a {
+    text-decoration: none; /* No underline */
+    color: #007bff; /* Bootstrap primary blue for links */
+    font-family: Arial, sans-serif; /* Font style */
+    font-size: 16px; /* Slightly larger font size for readability */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+
+  /* Hover effect for links */
+  nav a:hover {
+    color: #0056b3; /* Darker shade of blue on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+  }
+
+  /* Active link style */
+  nav a:active {
+    color: #004085; /* Even darker blue for active state */
+  }
+ 
